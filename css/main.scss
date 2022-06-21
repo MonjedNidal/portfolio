@@ -4,6 +4,8 @@ body{
     margin-top: 0;
     // margin-right: 0;
     font-family: 'Sen',sans-serif;
+    overflow-x: hidden;
+
     a{
         text-decoration: none;
     }
@@ -15,7 +17,7 @@ body{
     background: black;
     color: white;
     // display: flex;
-    padding: 1em;
+    // padding: 1em;
     height: 5rem;
 
     h1{
@@ -30,15 +32,17 @@ body{
     }
     svg{
         float: right;
-        padding: 2.3rem;
+        padding: 2.3rem 2rem;
         width: 2rem;
         height: 1rem;
     }
 }
 section.info{
+    padding-top: -1rem;
     background: #181823;
     color: white;
     img{
+        margin-top: -.6rem;
         width: 100%;
         top: 0%;
     }
@@ -49,6 +53,8 @@ section.info{
     }
     p{
         font-size: 1.2em;
+        padding-bottom: 2.4rem;
+        padding-top: 1rem;
     }
     .more-info{
         margin: 2rem;
@@ -82,12 +88,15 @@ section.info{
 section.projects{
     margin-top: -1.8rem;
     padding: 4rem 1rem 4rem;
-    right: 2rem;
+    // right: -2rem;
     color: white;
     background: black;
     // padding: 2rem;
 
     .project{
+        a{
+            color:white;
+        }
         img{
             padding-top: -5rem;
         }
@@ -95,13 +104,12 @@ section.projects{
     }
 
     .start{
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         h5{
             color: #8491A0;
         }
     }
     img{
-        margin-top: 1rem;
         width: 100%;
     }
     .project-info{
@@ -113,5 +121,18 @@ section.projects{
             font-size: 1.1em;
             padding-bottom: 1.5rem;
         }
+    }
+}
+
+.github{
+    margin: 3rem 0rem 0rem 1rem;
+    font-size: large;
+
+    a{
+        margin-top: 5rem;
+        font-size: large;
+        font-weight: bold;
+        color: black;
+        border-bottom: 1px solid #5B6876;
     }
 }
