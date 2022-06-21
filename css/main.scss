@@ -149,7 +149,7 @@ section.projects{
 section.footer{
     color: white;
     background:#181823;
-    padding: 2rem 0rem 1rem 1rem;
+    padding: 2rem 0rem 10rem 1rem;
     h1{
         font-family:'Kdam Thmor Pro', sans-serif;
         font-size: 1.7em;
@@ -157,7 +157,26 @@ section.footer{
     svg{
         width: 2rem;
         margin-top: -1rem;
-        padding-right: .3rem;
+        padding:0rem 0rem .4rem;
+        margin-left: -1rem;
+        margin-right: .4rem;
+    }
+    .social{
+        position:absolute;
+        margin-top: 1rem;
+        // padding: 1rem;
+        ul{
+            list-style-type: none;
+        }
+        svg{
+            float: left;
+        }
+        h4{
+            float: left;
+            margin-top: -.1rem;
+        }
     }
 }
+
+
 
