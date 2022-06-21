@@ -185,6 +185,7 @@ section.footer .social ul {
 
 section.footer .social svg {
   float: left;
+  margin-left: -1.7rem;
 }
 
 section.footer .social h4 {
