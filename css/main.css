@@ -133,16 +133,42 @@ section.projects .project-info p {
   padding-bottom: 1.5rem;
 }
 
-.github {
+.github-section .github {
   margin: 3rem 0rem 0rem 1rem;
   font-size: large;
+  padding-bottom: 3rem;
 }
 
-.github a {
-  margin-top: 5rem;
+.github-section .github p {
+  padding-bottom: 5rem;
+}
+
+.github-section .github a {
   font-size: large;
   font-weight: bold;
   color: black;
   border-bottom: 1px solid #5B6876;
+}
+
+.github-section img {
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+section.footer {
+  color: white;
+  background: #181823;
+  padding: 2rem 0rem 1rem 1rem;
+}
+
+section.footer h1 {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 1.7em;
+}
+
+section.footer svg {
+  width: 2rem;
+  margin-top: -1rem;
+  padding-right: .3rem;
 }
 /*# sourceMappingURL=main.css.map */
