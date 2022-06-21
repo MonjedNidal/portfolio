@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  margin-top: 0;
+  font-family: 'Sen',sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1em;
+  height: 5rem;
+}
+
+.navbar h1 {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 1.7em;
+  margin-left: 1rem;
+  vertical-align: middle;
+  float: left;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar svg {
+  float: right;
+  padding: 2.3rem;
+  width: 2rem;
+  height: 1rem;
+}
+
+section.info {
+  background: #181823;
+  color: white;
+}
+
+section.info img {
+  width: 100%;
+  top: 0%;
+}
+
+section.info .more-info {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+section.info .more-info span {
+  color: gray;
+}
+/*# sourceMappingURL=main.css.map */
