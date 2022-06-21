@@ -2,6 +2,7 @@
 body{
     margin: 0;
     margin-top: 0;
+    // margin-right: 0;
     font-family: 'Sen',sans-serif;
     a{
         text-decoration: none;
@@ -41,12 +42,76 @@ section.info{
         width: 100%;
         top: 0%;
     }
+    h2{
+        font-size: 1.6em;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2em;
+    }
     .more-info{
-        
-        text-align: center;
+        margin: 2rem;
+        // text-align: center;
         padding-bottom: 1.5rem;
         span{
-            color: gray;
+            color: #8491A0;
         }
    }
+}
+.page2{
+    // text-align: center;
+    padding-top: .6rem;
+    // padding-bottom: 1.5rem;
+
+    .title{
+        font-size: 1.6em;
+    }
+    p{
+        font-size: 1.2em;
+        padding-bottom: 3rem;
+    }
+    .text{
+        margin: 2rem;
+    }
+    svg{
+        width: 100%;
+    }
+}
+
+section.projects{
+    margin-top: -1.8rem;
+    padding: 4rem 1rem 4rem;
+    right: 2rem;
+    color: white;
+    background: black;
+    // padding: 2rem;
+
+    .project{
+        img{
+            padding-top: -5rem;
+        }
+        background:#181823 ;
+    }
+
+    .start{
+        margin-bottom: 2rem;
+        h5{
+            color: #8491A0;
+        }
+    }
+    img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .project-info{
+        margin: 1rem;
+        h4{
+            font-size: 1.4em;
+        }
+        p{
+            font-size: 1.1em;
+            padding-bottom: 1.5rem;
+        }
+    }
 }
