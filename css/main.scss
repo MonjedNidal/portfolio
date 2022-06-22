@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     margin-top: 0;
@@ -9,70 +10,105 @@ body{
         text-decoration: none;
     }
 }
-header h1{
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding: 1rem 0rem 1.4rem 1.5rem;
-    background: #181823;
-    text-decoration: none;
-    color: white;
-    float: left;
 
+
+.navbar{
+    width: 100%;
+    background: black;
+    color: white;
+    // display: flex;
+    // padding: 1em;
+    height: 5rem;
+
+    h1{
+        font-family:'Kdam Thmor Pro', sans-serif;
+        font-size: 1.7em;
+        margin-left: 1rem;
+        vertical-align:middle;
+        float: left;
+    }
     a{
         color: white;
     }
-}
+    svg{
+        float: right;
+        padding: 2.3rem 2rem;
+        width: 2rem;
+        height: 1rem;
+    }
 
-.menu{
-    width: 2.1em;
-    margin: 2em 1.5rem 1rem 0rem;
-    cursor: pointer;
-    float: right;
-}
+    .sidenav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: white;
+        height: 100vh;
+        width: 50%;
+        z-index: 10;
+        text-transform: uppercase;
+        transform: translate(100%);
+        transition: transform .5s ease-in-out;
 
-.navbar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: white;
-    height: 100vh;
-    width: 50%;
-    z-index: 10;
-    text-transform: uppercase;
-    transform: translate(100%);
-    transition: transform .5s ease-in-out;
-
-    ul{
-        list-style-type: none;
-        padding: 0;
-        margin-top: 8em;
-
-        a{
-            color: black;
-            padding: .75em 2em;
-            display: block;
-            // width: 100%;
-
-            &:hover{
-                background:#5B6876;
-                color:white;
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin-top: 8em;
+    
+            a{
+                color: black;
+                padding: .75em 2em;
+                display: block;
+                // width: 100%;
+    
+                &:hover{
+                    background: rgb(235, 235, 235);
+                }
+    
             }
-
+        }
+    
+        .close {
+            float: right;
+            margin: 2em;
+            width: 2.5em;
+            cursor: pointer;
         }
     }
-
-    .close {
-        float: right;
-        margin: 1.5em;
-        width: 2.5em;
-    }
-
-
 }
 
+// .sidenav{
+//     position: fixed;
+//     height: 100%;
+//     width: 0;
+//     z-index: 7;
+//     top: 0%;
+//     right: 0%;
+//     background-color: #5B6876;
+//     overflow-x: hidden;
+//     padding-top: 60px;
+//     transition: 0.5s;
 
+//     a{
+//         padding: 8px 8px 8px 32px;
+//         text-decoration: none;
+//         font-size: 25px;
+//         color: #818181;
+//         display: block;
+//         transition: 0.3s;
+    
+//         a:hover {
+//             color: #f1f1f1;
+//           }
+//     }
 
+//     .close{
+//         position: absolute;
+//         top: 0;
+//         right: 25px;
+//         font-size: 36px;
+//         margin-left: 50px;
+//     }
+// }
 
 section.info{
     padding-top: -1rem;
@@ -81,6 +117,7 @@ section.info{
     img{
         margin-top: -.6rem;
         width: 100%;
+        top: 0%;
     }
     h2{
         font-size: 1.6em;
@@ -215,78 +252,5 @@ section.footer{
     }
 }
 
-@media only screen and (min-width: 720px){
 
-    body{
-        margin: 0rem;
-    }
 
-    header{
-        display: flex;
-        background:#181823;
-        h1{
-            background: #181823;
-            margin-top: .4rem;
-        }
-        svg{
-            display: none;
-        }
-        .navbar{
-            transform: translateX(0);
-            display: block;
-            position: absolute;
-            width: auto;
-            height: auto;
-            background: none;
-            a{
-                color: white;
-                font-size: small;
-                &:hover{
-                    background: none;
-                    text-decoration: underline;
-                }
-            }
-            ul{
-                display: flex;
-                margin-top: 1.8em;
-            }
-            
-        }
-    }
-
-    section.info{
-        background:#181823;
-        padding-top: .6rem;
-        display: flex;
-        width: 100%;
-        img{
-            // position: relative;
-            // position: absolute;
-            width: 50%;
-            float: left;
-            height: 100%;
-        }
-        .more-info{
-            position: absolute;
-            padding-left: 40%;
-            // margin-bottom: 10%;
-        }
-    }
-
-    section.page2{
-        display: flex;
-        margin-top: -.6rem;
-        height: fit-content;
-        .text{
-            width: 50%;
-            position: relative;
-            float: right;
-        }
-        svg{
-            width: 50%;
-            padding-bottom: 1.8rem;
-            position: relative;
-        }
-    }
-
-}
