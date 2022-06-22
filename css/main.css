@@ -9,30 +9,66 @@ body a {
   text-decoration: none;
 }
 
-.navbar {
-  width: 100%;
-  background: black;
-  color: white;
-  height: 5rem;
-}
-
-.navbar h1 {
+header h1 {
   font-family: 'Kdam Thmor Pro', sans-serif;
-  font-size: 1.7em;
-  margin-left: 1rem;
-  vertical-align: middle;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 1rem 0rem 1.4rem 1.5rem;
+  background: #181823;
+  text-decoration: none;
+  color: white;
   float: left;
 }
 
-.navbar a {
+header h1 a {
   color: white;
 }
 
-.navbar svg {
+.menu {
+  width: 2.1em;
+  margin: 2em 1.5rem 1rem 0rem;
+  cursor: pointer;
   float: right;
-  padding: 2.3rem 2rem;
-  width: 2rem;
-  height: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  text-transform: uppercase;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+.navbar ul a {
+  color: black;
+  padding: .75em 2em;
+  display: block;
+}
+
+.navbar ul a:hover {
+  background: #5B6876;
+  color: white;
+}
+
+.navbar .close {
+  float: right;
+  margin: 1.5em;
+  width: 2.5em;
 }
 
 section.info {
@@ -44,7 +80,6 @@ section.info {
 section.info img {
   margin-top: -.6rem;
   width: 100%;
-  top: 0%;
 }
 
 section.info h2 {
@@ -191,5 +226,83 @@ section.footer .social svg {
 section.footer .social h4 {
   float: left;
   margin-top: -.1rem;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    margin: 0rem;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #181823;
+  }
+  header h1 {
+    background: #181823;
+    margin-top: .4rem;
+  }
+  header svg {
+    display: none;
+  }
+  header .navbar {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  header .navbar a {
+    color: white;
+    font-size: small;
+  }
+  header .navbar a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  header .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.8em;
+  }
+  section.info {
+    background: #181823;
+    padding-top: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  section.info img {
+    width: 50%;
+    float: left;
+    height: 100%;
+  }
+  section.info .more-info {
+    position: absolute;
+    padding-left: 40%;
+  }
+  section.page2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -.6rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  section.page2 .text {
+    width: 50%;
+    position: relative;
+    float: right;
+  }
+  section.page2 svg {
+    width: 50%;
+    padding-bottom: 1.8rem;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=main.css.map */
