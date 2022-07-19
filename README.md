@@ -1,6 +1,7 @@
 # portfolio
 
 Here's my portfolio which's i made for me :)
+But it still not completely done.
 
 On pc : 
 
